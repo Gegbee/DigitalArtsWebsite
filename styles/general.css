@@ -1,0 +1,73 @@
+/* COLOR PALETTE
+black: #111112
+blue: #5da9f0
+yellow: #ecc828
+purple-pinkish: #cd63f7 maybe
+*/
+
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    color:#111112;
+    margin:0;
+    padding:0;
+}
+
+/* USE P FOR EVEYTHING JUST CHANGE FONT, COLOR, AND SIZE IN THESE DIFFERENT CLASSES */
+.xlh {
+    font-size:56px;
+    text-align: left;
+    word-spacing: -12px;
+    letter-spacing:-4px;
+    
+}
+.lh {
+    font-family:'Space Grotesk', sans-serif; 
+    font-size: 46px;
+    text-align: left;
+    font-weight:600;
+}
+.h {
+    font-family:'Space Grotesk', sans-serif; 
+    font-size: 30px;
+    text-align: left;
+    font-weight:900;
+}
+.lt {
+    font-family:'Space Grotesk', sans-serif; 
+    font-size: 24px;
+}
+.t {
+    font-family:'Space Grotesk', sans-serif; 
+    font-size:20px;
+}
+.st {
+
+}
+
+hr.blue {
+    border-width:0;
+    background-color:#5da9f0;
+    height:6px;
+    border-radius:12px;
+    padding:0;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+hr.yellow {
+    border-width:0;
+    background-color:#cd63f7;
+    height:3px;
+    border-radius:12px;
+    padding:0;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+a.page-link {
+    color:#1111128f;
+    transition: color 0.2s;
+}
+a.page-link:hover{
+    color:#111112;
+}

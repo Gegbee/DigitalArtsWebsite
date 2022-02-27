@@ -1,0 +1,120 @@
+
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+/* Control the left side */
+.left {
+    left: 0;
+}
+/* Control the right side */
+.right {
+    right: 0;
+}
+/* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:fit-content;
+    transform: translate(-50%, -50%);
+}
+
+.link-icon {
+    width:50px;
+    height:50px;
+    text-decoration: none;
+    transition: transform 0.3s, opacity 1s;
+    display: inline-block;
+    transform: scale(1, 1);
+    opacity:0.5;
+    background-repeat:no-repeat;
+    margin:15px;
+    /* filter: drop-shadow(2px 2px 1px rgba(21, 29, 39, 0.6)); */
+}
+.link-icon:hover {
+    opacity:1;
+    transform: scale(1.15, 1.15);
+}
+
+.blinking-cursor {
+    font-family: 'Roboto Mono', monospace;
+    font-size:65px;
+    color: #111112;
+    display:inline-block;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+@-moz-keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+@-webkit-keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+@-ms-keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+@-o-keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: black;
+    }
+}
+
+.rainbow-letters {
+    font-size: 24px;
+}
+.rainbow-letters p:nth-child(10n + 1) {
+color: #f53e3b;
+}
+.rainbow-letters p:nth-child(10n + 2) {
+color: #f5d33b;
+}
+.rainbow-letters p:nth-child(10n + 3){
+color: #7ff53b;
+}
+.rainbow-letters p:nth-child(10n + 5){
+color: #3bcaf5;
+}
+.rainbow-letters p:nth-child(10n + 4) {
+color: #3b3ef5;
+}
+.rainbow-letters p:nth-child(10n + 6){
+color: #ba3bf5;
+}
+.rainbow-letters p:nth-child(10n + 7){
+color: #f53ba1;
+}
