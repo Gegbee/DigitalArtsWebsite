@@ -1,21 +1,18 @@
 
-/* Split the screen in half */
-.split {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
+.left-side,.right-side {
+    padding:0;
+    margin:0;
+    height: 100vh;
+    width:100%;
+    position:relative;
 }
-/* Control the left side */
-.left {
-    left: 0;
+
+@media screen and (min-width:992px) {
+    .left-side, .right-side {
+        height:100vh;
+    }
 }
-/* Control the right side */
-.right {
-    right: 0;
-}
+
 /* If you want the content centered horizontally and vertically */
 .centered {
     position: absolute;
@@ -92,29 +89,4 @@
     50% {
         color: black;
     }
-}
-
-.rainbow-letters {
-    font-size: 24px;
-}
-.rainbow-letters p:nth-child(10n + 1) {
-color: #f53e3b;
-}
-.rainbow-letters p:nth-child(10n + 2) {
-color: #f5d33b;
-}
-.rainbow-letters p:nth-child(10n + 3){
-color: #7ff53b;
-}
-.rainbow-letters p:nth-child(10n + 5){
-color: #3bcaf5;
-}
-.rainbow-letters p:nth-child(10n + 4) {
-color: #3b3ef5;
-}
-.rainbow-letters p:nth-child(10n + 6){
-color: #ba3bf5;
-}
-.rainbow-letters p:nth-child(10n + 7){
-color: #f53ba1;
 }

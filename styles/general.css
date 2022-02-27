@@ -4,8 +4,13 @@ blue: #5da9f0
 yellow: #ecc828
 purple-pinkish: #cd63f7 maybe
 */
-
-
+html, body {
+    padding:0;
+    margin:0;
+    height:100%;
+    width:100%;
+    overflow-x:hidden;
+}
 p {
     font-family: 'Roboto Mono', monospace;
     color:#111112;
@@ -23,7 +28,7 @@ p {
 }
 .lh {
     font-family:'Space Grotesk', sans-serif; 
-    font-size: 46px;
+    font-size: 42px;
     text-align: left;
     font-weight:600;
 }
@@ -39,35 +44,42 @@ p {
 }
 .t {
     font-family:'Space Grotesk', sans-serif; 
-    font-size:20px;
+    font-size:19px;
 }
-.st {
-
+.st { 
+    font-size:16px;
 }
 
-hr.blue {
+.line {
     border-width:0;
-    background-color:#5da9f0;
-    height:6px;
     border-radius:12px;
     padding:0;
     margin-top:20px;
     margin-bottom:20px;
 }
-hr.yellow {
-    border-width:0;
+
+.line.blue {
+    background-color:#5da9f0;
+    height:4px;
+}
+.line.pink {
     background-color:#cd63f7;
-    height:3px;
-    border-radius:12px;
-    padding:0;
-    margin-top:10px;
-    margin-bottom:10px;
+    height:4px;
 }
 
-a.page-link {
+a.page-lin {
     color:#1111128f;
     transition: color 0.2s;
 }
-a.page-link:hover{
+a.page-lin:hover {
     color:#111112;
+}
+
+.parallelogram {
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    height: 12vh;
+    transform: skew(0deg, 2deg) translate(0vh, 6vh);
+    background:#5da9f0;
 }
