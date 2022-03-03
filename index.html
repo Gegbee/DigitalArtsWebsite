@@ -28,7 +28,6 @@
     font-family: 'Roboto Mono', monospace;
     font-family: 'Space Grotesk', sans-serif; 
     -->
-
 </head>
 <body>
     <!-- FIRST PAGE -->
@@ -62,6 +61,28 @@
             </div>
         </div>
     </div>
+
+    <div class="menubar">
+        <div class="link-container">
+            <a class="current menubar-link" href="#">Home</a>
+            <a class="menubar-link" href="#">Mission</a>
+            <a class="menubar-link" href="#">Showcase</a>
+        </div>
+
+        <div class="mobile-container" style="display: none;">
+            <button id="mobile-links-show">☰</button>
+            <ul id="mobile-links">
+                <a class="current-mobile mobile-link" href="#">Home</a>
+                <a class="mobile-link" href="#">Mission</a>
+                <a class="mobile-link" href="#">Showcase</a>
+            </ul>
+        </div>
+    </div>
+
+    <div id="read-more">
+        <p class="read-more-text">Read More <span class="read-more-arrow">&#8595;</span></p>
+    </div>
+
     <div class="parallelogram"></div>
     <!-- SECOND PAGE -->
     <!-- <div  class="row no-gutters">
@@ -77,4 +98,5 @@
             </div>
         </div>
     </div> -->
+    <script type="text/javascript" src="index.js"></script>
 </body>
