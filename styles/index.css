@@ -90,3 +90,131 @@
         color: black;
     }
 }
+
+.menubar {
+    width: 40%;
+    height: 60px;
+    background-color: #f0f0f0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.link-container {
+    width: 80%;
+    display: block;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.menubar-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 0px 15px 0px 15px;
+    transition: 0.3s all;
+}
+
+.menubar-link:hover {
+    cursor: pointer;
+    color: #707070;
+}
+
+.current { color: dodgerblue; }
+.current:hover { color: #6cb7ff; }
+
+.mobile-container {
+    text-align: center;
+}
+
+#mobile-links-show {
+    border: none;
+    outline: none;
+    font-size: 2em;
+}
+
+#mobile-links-show:hover {
+    cursor: pointer;
+    color: #707070;
+}
+
+
+@media screen and (max-width: 990px) {
+    .menubar {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .link-container {
+        display: none !important;
+    }
+
+    .mobile-container {
+        display: block !important;
+    }
+
+    .showcase-card-container {
+        transform: translateX(500px);
+    }
+}
+
+#mobile-links {
+    display: block;
+    opacity: 0;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: -32px;
+    transition: opacity 0.5s;
+    background-color: #5da9f0;
+}
+
+.mobile-link {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 40px;
+    background-color: #5da9f0;
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.mobile-link:hover {
+    cursor: pointer;
+    color: lightgray;
+}
+
+.current-mobile { color: black; }
+.current-mobile:hover { color: dimgray; }
+
+#read-more {
+    display: block;
+    font-size: 1.25em;
+    animation: bounce 2s linear infinite;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    transition: opacity 1.2s;
+}
+
+.read-more-text {
+    color: black;
+    font-weight: 600;
+}
+
+.read-more-arrow { font-size: 1.5em; }
+
+@keyframes bounce {
+    0% { transform: translate(-50%, 0px); }
+    25% { transform: translate(-50%, -15px); }
+    75% { transform: translate(-50%, 15px); }
+    100% { transform: translate(-50%, 0px); }
+}
