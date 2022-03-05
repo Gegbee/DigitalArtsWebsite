@@ -16,7 +16,10 @@ p {
     margin:0;
     padding:0;
 }
-
+img {
+   width:100%;
+   border-radius: 8px 8px 0 0;
+}
 td {
    text-align:center;
 }
@@ -25,6 +28,7 @@ td {
    font-family: 'Lexend Deca', sans-serif;
    font-size:60px;
    text-align: left;
+   margin:0;
    /* word-spacing: -12px;
    letter-spacing:-4px; */
 }
@@ -32,19 +36,23 @@ td {
    font-family: 'Lexend Deca', sans-serif;
    font-size: 40px;
    text-align: left;
+   margin:0;
 }
 .h {
    font-family:'Space Grotesk', sans-serif; 
    font-size: 38px;
    text-align: left;
+   margin:0;
 }
 .lt {
-    font-family:'Space Grotesk', sans-serif; 
-    font-size: 24px;
+   font-family:'Space Grotesk', sans-serif; 
+   font-size: 24px;
+   margin:0;
 }
 .t {
-    font-family:'Space Grotesk', sans-serif; 
-    font-size:19px;
+   font-family:'Space Grotesk', sans-serif; 
+   font-size:19px;
+   margin:0;
 }
 .st { 
    font-family: 'Lexend Deca', sans-serif;
@@ -91,6 +99,11 @@ td {
     background-color:#cd63f7;
     height:4px;
 }
+.line.yellow {
+   background-color:#fcdd56;
+   height:4px;
+}
+
 
 a.page-lin {
     color:#1111128f;
