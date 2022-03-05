@@ -12,31 +12,31 @@ html, body {
     overflow-x:hidden;
 }
 p {
-    font-family: 'Roboto Mono', monospace;
     color:#111112;
     margin:0;
     padding:0;
 }
 
+td {
+   text-align:center;
+}
 /* USE P FOR EVEYTHING JUST CHANGE FONT, COLOR, AND SIZE IN THESE DIFFERENT CLASSES */
 .xlh {
-    font-size:56px;
-    text-align: left;
-    word-spacing: -12px;
-    letter-spacing:-4px;
-    
+   font-family: 'Lexend Deca', sans-serif;
+   font-size:60px;
+   text-align: left;
+   /* word-spacing: -12px;
+   letter-spacing:-4px; */
 }
 .lh {
-    font-family:'Space Grotesk', sans-serif; 
-    font-size: 42px;
-    text-align: left;
-    font-weight:600;
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 40px;
+   text-align: left;
 }
 .h {
-    font-family:'Space Grotesk', sans-serif; 
-    font-size: 30px;
-    text-align: left;
-    font-weight:900;
+   font-family:'Space Grotesk', sans-serif; 
+   font-size: 38px;
+   text-align: left;
 }
 .lt {
     font-family:'Space Grotesk', sans-serif; 
@@ -47,7 +47,33 @@ p {
     font-size:19px;
 }
 .st { 
-    font-size:16px;
+   font-family: 'Lexend Deca', sans-serif;
+   font-size:16px;
+   margin:0;
+}
+.handwriting {
+   font-family: 'Schoolbell', cursive;
+
+}
+@media screen and (max-width:992px) {
+   .xlh {
+      font-size: 45px;
+   }
+   .lh {
+      font-size: 32px;
+   }
+   .h {
+      font-size:34px;
+   }
+   .lt {
+      font-size:22px;
+   }
+   .t {
+      font-size:16px;
+   }
+   .st {
+      font-size:14px;
+   }
 }
 
 .line {
@@ -57,7 +83,6 @@ p {
     margin-top:20px;
     margin-bottom:20px;
 }
-
 .line.blue {
     background-color:#5da9f0;
     height:4px;
@@ -80,7 +105,7 @@ a.page-lin:hover {
     position:fixed;
     bottom:0;
     width: 100%;
-    height: 30vh;
-    transform: skew(0deg, 5deg) translate(0vh, 20vh);
+    height: 20vh;
+    transform: skew(0deg, 3deg) translate(0vh, 12vh);
     background:#5da9f0;
 }
