@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>San Diego Digital Arts</title>
+    <link rel="icon" href="Icons/DigitalArts.png">
     <link rel = "stylesheet" href = "styles/general.css">
     <link rel = "stylesheet" href = "styles/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,6 +31,9 @@
 <body>
     <!-- FIRST PAGE -->
     <div class="row no-gutters">
+
+
+
         <div class="col-lg-6 no-gutters left-side">
             <div class="centered" style="max-width:80%;">
                 <p class = "lh" style="font-weight:100;margin:0;">Digital Arts</p>
@@ -46,54 +50,74 @@
                   <p>School</p>
                   <p>Students!</p>
                 </div> -->
-                <p class = "st">La Jolla High School and SDUSD</p>
+                <p class = "st">For High School Students in San Diego</p>
                 <!-- LINKS PUT IN A TABLE SO THEY EXPAND IF WE WANT TO CHANG THE SIZE OF THE TITLE FONT -->
                 <table style = "width:100%;margin:0;padding:0;">
                     <tr>
-                        <td><a class = link-icon href="https://discord.gg/w56TdBcd" style = "background-image: url('Icons/discord.svg');"></a></td>
-                        <!-- <td><a class = link-icon style = "background-image: url('Icons/twitter.svg');"></a></td> -->
-                        <td><a class = link-icon href="mailto:DigitalArtsSD@gmail.com?subject=Mail from the SDDA Website" style = "background-image: url('Icons/gmail.svg');"></a></td>
-                        <td><a class = link-icon style = "background-image: url('Icons/github.svg');"></a></td>
+                        <td><a class = "link-icon" href="https://discord.gg/w56TdBcd" style = "background-image: url('Icons/discord.svg');"></a></td>
+                        <!-- <td><a class = "link-icon small" style = "background-image: url('Icons/twitter.svg');"></a></td> -->
+                        <td><a class = "link-icon" href="mailto:DigitalArtsSD@gmail.com?subject=Mail from the SDDA Website" style = "background-image: url('Icons/gmail.svg');"></a></td>
+                        <td><a class = "link-icon" style = "background-image: url('Icons/github.svg');"></a></td>
                     </tr>
                 </table>
+               <div style = "transform:skew(-10deg, 10deg)">
+                  <p class = "h"style="margin-left:60px;font-weight:900;display:inline-block;">🡤</p>
+                  <p class = "st" style = "margin-left:10px;display:inline-block;"> JOIN THE DISCORD!</p>
+               </div>
             </div>
         </div>     
+
+
+
         <div class="col-lg-6 no-gutters right-side ">
-            <div class = "centered" style="max-width:70%;">
+            <div class = "relative-centered">
+
+
                 <p class = "h">Who are we?</p>
                 <div class = "line pink"></div>
                 <p class = "t" style="line-height: 40px;">A bunch of San Diego high school students looking to build a 
                   game development community based on collaboration and sharing!
                 </p>
                <a style="font-weight:600;" class = "lt page-lin" href="pages/mission.html">Read More -></a>
+
+
                <div style = "padding:20px;"></div>
-               <p class = "h">Showcase</p>
+
+
+               <p class = "h" style="display:inline-block;margin-right:20px;">Showcase</p>
+               <p style="display:inline-block;margin:0;" class = "t">(Games and music made by our members!)</p>
                <div class = "line yellow"></div>
-               <div>
+               <div style = "width:100%;">
                   <div class = "project-card" onclick="window.location = 'https://github.com/Gegbee/PixelPenalty'">
                      <img src="Imgs/PixelPenalty.png" alt="Image">
                      <div>
-                        <p class = "lt handwriting" style = "padding:20px;text-align:center;">Pixel Penalty</p>
+                        <p class = "t handwriting" style = "padding:20px;text-align:center;">Pixel Penalty!</p>
                      </div>
                   </div>
                   <div class = "project-card" onclick="window.location = 'https://lajollagamesclub.itch.io/podmornica'">
                      <img src="Imgs/Podmornica.png" alt="Image">
                      <div>
-                        <p class = "lt handwriting" style = "padding:20px;text-align:center;">Podmornica</p>
+                        <p class = "t handwriting" style = "padding:20px;text-align:center;">Podmornica</p>
                      </div>
                   </div>
                   <div class = "project-card" onclick="window.location = 'https://youtu.be/MTnpEPUrJiI'">
                      <img src="Imgs/Cyberdad.jpg" alt="Image">
                      <div>
-                        <p class = "lt handwriting" style = "padding:20px;text-align:center;">Cyberdad OST</p>
+                        <p class = "t handwriting" style = "padding:20px;text-align:center;">Cyberdad OST</p>
                      </div>
                   </div>
                </div>
                <a style="font-weight:600;" class = "lt page-lin" href="pages/showcase.html">See More -></a>
+
+
             </div>
         </div>
+
+
+
     </div>
 
+    <!-- MENUBAR TO REIINSTATED AFTER INITAL HOMEPAGE DONE -->
     <!-- <div class="menubar">
         <div class="link-container">
             <a class="current menubar-link" href="#">Home</a>
@@ -118,19 +142,5 @@
     <div class="parallelogram st" style = "text-align:center;padding:2vh;">
       <p class = "st">Our club made this website! -> <a href="https://github.com/Gegbee/DigitalArtsWebsite">Github</a></p>
    </div>
-    <!-- SECOND PAGE -->
-    <!-- <div  class="row no-gutters">
-        <div class="col-lg-6 no-gutters left-side">
-            <div class="centered">
-                <p>balls 2</p>
-            </div>
-        </div>
-            
-        <div class="col-lg-6 no-gutters right-side">
-            <div class = "centered">
-                <p>balls 2</p>
-            </div>
-        </div>
-    </div> -->
     <script type="text/javascript" src="index.js"></script>
 </body>

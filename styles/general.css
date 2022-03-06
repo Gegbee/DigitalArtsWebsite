@@ -60,9 +60,9 @@ td {
    margin:0;
 }
 .handwriting {
-   font-family: 'Schoolbell', cursive;
-
+   font-family: 'Chelsea Market', cursive;
 }
+
 @media screen and (max-width:992px) {
    .xlh {
       font-size: 45px;

@@ -23,6 +23,7 @@ let showingLinks = false;
 // });
 
 
+// Parellogram resize was changed to just adjusting by using viewport-height units
 // function resizeParallelogram() {
 // 	const rotation = 3.5 - window.innerWidth / 1500;
 // 	const translation = window.innerWidth / 500 + 15;
