@@ -26,11 +26,11 @@ A website for the Digital Arts and Code community (in the building)
 - ✅ Change mission title to "Who are we?", then explain who we are lol
 - Outline Discord icon as more important.
 - (PR task) Create Twitter account, add link.
-- Construction tape over github icon.
 - ✅ Add correct mailto email and subject after getting email from brenden.
-- Make sure all links lead to the right place.
 - ✅ Add club icon to the website tab.
 - ✅ Permanent join link for Discord.
-- Make 'see more ->' for showcase is visible on mobile (it hides under the blue tab at the bottom of the screen).
-- Maybe remove blue bar for mobile, and make it into te menu bar.
+- Make 'see more ->' for showcase and last showcase preview card visible on mobile (it hides under the blue tab at the bottom of the screen).
+- Maybe remove blue bar and make the text on the bottom just without a background.
 - Fix height of showcase and mission statement side of homepage when screen is > 992px but < 1400px.
+- Possibly remove mission statement and just transfer it all to the mission page.
+- (EASY) fix arrow pointing toward Discord icon so it works on mobile (you have to get an SVG arrow).
