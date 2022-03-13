@@ -1,38 +1,22 @@
 "use strict";
 
-const mobileContainer = document.getElementById("mobile-container");
 const mobileButton = document.getElementById("mobile-links-show");
 const mobileLinks = document.getElementById("mobile-links");
 
 const readMore = document.getElementById("read-more");
 
-const parallelogram = document.querySelector(".parallelogram");
-
 let showingLinks = false;
 
-// mobileButton.addEventListener("click", () => {
-// 	showingLinks = !showingLinks;
-	
-// 	if (showingLinks) {
-// 		mobileButton.innerHTML = "✕";
-// 		mobileLinks.style.opacity = 1;
-// 	} else {
-// 		mobileButton.innerHTML = "☰";
-// 		mobileLinks.style.opacity = 0;
-// 	}
-// });
-
-
-// Parellogram resize was changed to just adjusting by using viewport-height units
-// function resizeParallelogram() {
-// 	const rotation = 3.5 - window.innerWidth / 1500;
-// 	const translation = window.innerWidth / 500 + 15;
-
-// 	parallelogram.style = `transform: skew(0deg, ${rotation}deg) translate(0vh, ${translation}vh);`;
-// }
-
-// window.addEventListener("load", () => resizeParallelogram());
-// window.addEventListener("resize", () => resizeParallelogram());
+mobileButton.addEventListener("click", () => {
+ 	showingLinks = !showingLinks;
+   if (showingLinks) {
+      mobileButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 60 60" overflow="visible" stroke="black" stroke-width="10" stroke-linecap="round"><line x2="50" y2="50" /><line x1="50" y2="50" /></svg>';
+      mobileLinks.style.opacity = 1;
+   } else {
+      mobileButton.innerHTML = '<svg viewBox="0 0 60 60" width="50" height="50"><rect y="10" width="45" height="5"></rect><rect y="25" width="45" height="5"></rect><rect y="40" width="45" height="5"></rect></svg>';
+      mobileLinks.style.opacity = 0;
+   }
+});
 
 $(document).ready(() => {resizeReadMore()});
 $(document.body).scroll(() => {resizeReadMore()});
