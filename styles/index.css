@@ -42,30 +42,34 @@
    margin-top:0;
    margin-left:0;
 }
+/* LARGE MONITOR */
 @media (min-width: 1700px) {
    .project-card {
       width:200px;
    }
 }
+/* SMALL MONITOR */
 @media (min-width: 1400px) and (max-width: 1700px) {
    .project-card {
       width:160px;
    }
 }
-@media (min-width: 992px) and (max-width: 1400px) {
+/* LARGE LAPTOP */
+@media (min-width: 1200px) and (max-width: 1400px) {
    .project-card {
-      margin: auto;
-      margin-bottom:20px;
-      display:block;
-      width:280px;
+      margin-right:5px;
+      margin-left:5px;
+      width:150px;
    }
 }
-@media (min-width: 800px) and (max-width: 992px) {
+/* SMALL LAPTOP */
+@media (min-width: 1000px) and (max-width: 1199px) {
    .project-card {
-      width:180px;
+      width:250px;
    }
 }
-@media (max-width: 800px) {
+/* MOBILE */
+@media (max-width: 999px) {
    .project-card {
       margin: auto;
       margin-bottom:20px;
@@ -290,4 +294,12 @@
 }
 .slanted-reminder {
    transform:rotate(15deg);
+}
+.bottom-bar {
+   position: fixed;
+   width:100%;
+   text-align: center;
+   padding:2vh;
+   bottom:0;
+   margin:0;
 }

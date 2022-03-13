@@ -27,7 +27,7 @@ function resizeReadMore() {
    const b = document.body.scrollHeight - document.body.clientHeight;
    const c = a / b;
    console.log(document.body.clientWidth);
-	if (document.body.clientWidth > 992 || b === 0 || c > 0.4) {
+	if (document.body.clientWidth > 1200 || b === 0 || c > 0.4) {
       // readMore.style.display = "none";
       readMore.style.opacity = 0;
    } else {
